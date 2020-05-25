@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+    font-size: 16px;
+    --space-1: 0.5rem;
+    /* 8px */
+    --space-2: 1rem;
+    /* 16px */
+    --space-3: 1.5rem;
+    /* 24px */
+    --space-4: 2rem;
+    /* 32px */
+    --space-5: 2.5rem;
+    /* 40px */
+    font-family: 'Open Sans', sans-serif;
+    --primary-color: rgba(16, 16, 218, 0.856);
+    --complimentary-color: rgba(255, 255, 0, 0.856);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: var(--space-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--complimentary-color);
+    padding-top: 150px;
+}
+
+.main-container {
+    background-color: rgb(194, 85, 8);
+    border-radius: 5px;
+    border: var(--complimentary-color) solid 2px;
+    /* height: 350px; */
+}
+
+label {
+    margin-left: 10px;
+}
+
+input {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+#height {
+    margin-left: 10px;
+}
+
+.app-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-items: center;
+    justify-content: center;
+    width: 250px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.app-name h1 {
+    font-size: var(--space-5);
+}
+
+h3 {
+    font-size: 13px;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    font-size: var(--space-3);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 95px;
+    background-color: var(--complimentary-color);
+    color: black;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.submit:hover {
+    transform: scale(1.1);
+}
